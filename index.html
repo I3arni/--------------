@@ -10,32 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
-    <script src="script.js" defer></script>
+    
 </head>
 <body>
     <div class="page__one">
         <div class="container">
             <div class="header">
                 <div class="category">
-                    <a href="#">Для мужчин</a>
-                    <a href="#">Для женщин</a>
-                    <a href="#">Для детей</a>
+                    <a href="#">Для мужчин<img class="triangle" src="images/Polygon.svg"  alt="треугольник"></a>
+                    <a href="#">Для женщин<img src="images/Polygon.svg"  alt="треугольник"></a>
+                    <a href="#">Для детей<img src="images/Polygon.svg"  alt="треугольник"></a>
                 </div>
+                <div class="logo">
+                    <img src="/images/Frame.svg" alt="logo">
+                    <p class="logo_text">THE LOOP</p>
+                 </div>
                 <div class="logistic">
-                    <a href="#" class = 'section__button'>Оплата</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Корзина</a>
+                    <a href="#" class = "section__button">Оплата</a>
+                    <a href="#" class = "section__button_2">Доставка</a>                   
+                </div>
+                <div class="basket">
+                    <a href="#"><img class="basket_logo" src="/images/shopping-basket-button.svg" alt="basket">
+                    <div class="purchases"><img src="/images/Rectangle 1.png" alt="1"><img src="/images/Rectangle 2 (1).png" alt="2"></a></div>
                 </div>
 
             </div>
             <div class="sale_window">
                 <div class="sale_text">
                     <p class="sale_text_1">Зимняя распродажа</p>
-                    <p class="sale_text_2">cкидки до 90%</p>
+                    <p class="sale_text_2">СКИДКИ ДО 90%</p>
                     <button class="show_models">cмотреть модели</button>
 
                 </div>
-                <img src="images/snickers.png" alt="Кроссовки">
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="/images/slide_1.png" alt="snickers">
+                    </div>
+                    <div class="slider__item">
+                        <img src="/images/slide_2.png" alt="shoes">
+                    </div>
+                    <div class="slider__item">
+                        <img src="/images/slide_3.png" alt="hat">
+                    </div>
+                    
+                </div>
+                
             </div>
          </div>
     </div>
@@ -52,10 +71,10 @@
                 <div class="male_text_section">
                     <p class="male_wear_text_1">МУЖСКАЯ КОЛЛЕКЦИЯ</p>
                     <p class="male_wear_text_2">Обувь, пуловеры, костюмы</p>
-                    <button class="show_more">стрелка</button>
+                    <button class="show_more"><img class="arrow" src="/images/Arrow.svg" alt="arrow"></button>
                 </div>
                 
-                <img src="images/man.png" alt="Мужчина">
+                <img class="page_three_image" src="images/man.png" alt="Мужчина">
             </div>
          </div>
 
@@ -65,10 +84,10 @@
                 <div class="female_text_section">
                     <p class="female_wear_text_1">ЖЕНСКАЯ КОЛЛЕКЦИЯ</p>
                     <p class="female_wear_text_2">Обувь, пуловеры, костюмы</p>
-                    <button class="show_more">стрелка</button>
+                    <button class="show_more"><img class="arrow" src="/images/Arrow.svg" alt="arrow"></button>
                 </div>
                 
-                <img src="images/woman.png" alt="Женщина">
+                <img class="page_three_image" src="images/woman.png" alt="Женщина">
             </div>
          </div>
     </div>
@@ -106,7 +125,7 @@
                 <img class="product_img" src="images/Shirt.png" alt="t-shirt">
             </div>
             <div class="product_example_8">
-                <p class="product_text">ОБУЬВ</p>
+                <p class="product_text">ОБУВЬ</p>
                 <img class="product_img" src="images/shoes.png" alt="shoes">
             </div>
         </div>
@@ -142,7 +161,7 @@
         <div class="container">
             <div class="subscription">
                 <p class="sales_presents">ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</p>
-                <input type="text" placeholder="Введите e-mail">
+                <input type="text" placeholder=" Введите e-mail">
                 <button class="subscribe">ПОДПИСАТЬСЯ</button>
             </div>
         </div>
@@ -206,12 +225,26 @@
     </div> -->
 
     
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="script.js" defer></script>
+
+    
     <div class="modal">
         <div class="modal__main">
-            <h2 class="modal__title">Модальное окно</h2>
+            <h2 class="modal__title">Варианты оплаты</h2>
 
             <div class="modal__container">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum libero, dolorum nihil hic accusamus quidem quam </p>
+                <div class="modal_window_1">
+                    <h3>Картой на сайте</h3>
+                    <p>Вы можете оплатить заказ картой при оформлении заказа. Метод оплаты доступен для Курьерской доставки без примерки и Постоматов и пунктов выдачи заказа. </p>
+
+                </div>
+                <div class="modal_window_2">
+                    <h3>При получении картой или наличными</h3>
+                    <p>Вы можете оплатить заказ картой или наличными при получении. Для этого в момент оформления заказа выберите метод оплаты "При получении". </p>
+                </div>
              </div>
              <button class="modal__close">&#10006;</button>
         </div>
